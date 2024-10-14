@@ -144,4 +144,14 @@ html {
     -o-border-radius: 50%;
     background-image: url(../img/Elementary_classroom_in_Alaska.jpg);
     background-size: cover;
+
+}
+
+.secborder-content-one p,
+.secborder-content-two p,
+.secborder-content-three p {
+    text-align: center;
+    margin-top: 225px;
+    font-size: 20px;
+    z-index: 1;
 }
