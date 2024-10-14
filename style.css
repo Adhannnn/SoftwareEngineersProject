@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(251, 251, 251);
+    border-left: none;
+    border-right: none;
+    height: 60px;
+}
+
+.logo-border {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 6px;
+    border: none;
+}
+
+.logo-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container > .bar {
+    height: 30px;
+    width: 150px;
+    background-color: white;
+    border: 0.5px solid black;
+    margin: 0;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.bar > a {
+    text-decoration: none;
+    color: black;
+}
+
+.container > .bar:hover {
+    background-color: rgb(173, 173, 173);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.header {
+    margin-top: 40px;
+    margin-left: 50px;    
+}
+
+.header p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.header #name {
+    font-style: italic;
+}
+
+.border-image {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    height: 400px;
+}
+
+.img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.content h1 {
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+.border-second {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secborder-content-one {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/school_02.jpg);
+    background-size: cover;
+}
+
+.secborder-content-two{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/Dollar_Academy_WEB-01.webp);
+    background-size: cover;
+}
+
+.secborder-content-three {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/Elementary_classroom_in_Alaska.jpg);
+    background-size: cover;
+}
