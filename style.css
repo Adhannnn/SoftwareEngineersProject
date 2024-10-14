@@ -154,3 +154,281 @@ html {
     font-size: 20px;
     z-index: 1;
 }
+
+.content .border-third {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content hr {
+            margin-top: 120px;
+        }
+
+        .content #message {
+            margin-top: 100px;
+            margin-left: 120px;
+        }
+
+        .border-third {
+            margin-top: 50px;
+        }
+
+        .form {
+            flex: 1;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .form input[type="text"],
+        .form input[type="date"] {
+            width: 360px;
+            text-align: center;
+        }
+
+        .form input[type="text"]::placeholder {
+            text-align: center;
+        }
+
+        .pesan {
+            vertical-align: top;
+        }
+
+        .table {
+            flex: 1;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .border-result {
+            border: 1px solid black;
+            width: 600px;
+        }
+
+        .result table tr>#bold {
+            font-weight: bold;
+        }
+
+        .errorpopup {
+            width: 400px;
+            background: #ff0000;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            -webkit-transform: translate(-50%, -50%) scale(0.1);
+            -moz-transform: translate(-50%, -50%) scale(0.1);
+            -ms-transform: translate(-50%, -50%) scale(0.1);
+            -o-transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #ffffff;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            -webkit-transition: transform 0.4s, top 0.4s;
+            -moz-transition: transform 0.4s, top 0.4s;
+            -ms-transition: transform 0.4s, top 0.4s;
+            -o-transition: transform 0.4s, top 0.4s;
+        }
+
+        .errorpopup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .errorpopup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #d64949;
+            color: #fff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: none;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+            -ms-border-radius: none;
+            -o-border-radius: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .successpopup {
+            width: 400px;
+            background: #85f703;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            -webkit-transform: translate(-50%, -50%) scale(0.1);
+            -moz-transform: translate(-50%, -50%) scale(0.1);
+            -ms-transform: translate(-50%, -50%) scale(0.1);
+            -o-transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #0b0b0b;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            -webkit-transition: transform 0.4s, top 0.4s;
+            -moz-transition: transform 0.4s, top 0.4s;
+            -ms-transition: transform 0.4s, top 0.4s;
+            -o-transition: transform 0.4s, top 0.4s;
+        }
+
+        .successpopup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .successpopup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #85c554;
+            color: #050505;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: none;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+            -ms-border-radius: none;
+            -o-border-radius: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .birthpopup {
+            width: 400px;
+            background: #f70303;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            -webkit-transform: translate(-50%, -50%) scale(0.1);
+            -moz-transform: translate(-50%, -50%) scale(0.1);
+            -ms-transform: translate(-50%, -50%) scale(0.1);
+            -o-transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #ffffff;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            -webkit-transition: transform 0.4s, top 0.4s;
+            -moz-transition: transform 0.4s, top 0.4s;
+            -ms-transition: transform 0.4s, top 0.4s;
+            -o-transition: transform 0.4s, top 0.4s;
+        }
+
+        .birthpopup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .birthpopup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #b55252;
+            color: #ffffff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: none;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+            -ms-border-radius: none;
+            -o-border-radius: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logoutpopup {
+            width: 400px;
+            background: #85f703;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            -webkit-transform: translate(-50%, -50%) scale(0.1);
+            -moz-transform: translate(-50%, -50%) scale(0.1);
+            -ms-transform: translate(-50%, -50%) scale(0.1);
+            -o-transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #000000;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            -webkit-transition: transform 0.4s, top 0.4s;
+            -moz-transition: transform 0.4s, top 0.4s;
+            -ms-transition: transform 0.4s, top 0.4s;
+            -o-transition: transform 0.4s, top 0.4s;
+        }
+
+        .logoutpopup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .logoutpopup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #85c554;
+            color: #000000;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: none;
+            -webkit-border-radius: none;
+            -moz-border-radius: none;
+            -ms-border-radius: none;
+            -o-border-radius: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logoutpopup #namelogout {
+            font-style: italic;
+        }
+
+        .open-popup {
+            top: 50%;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1);
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            -moz-transform: translate(-50%, -50%) scale(1);
+            -ms-transform: translate(-50%, -50%) scale(1);
+            -o-transform: translate(-50%, -50%) scale(1);
+        }
+
+
+        footer {
+            text-align: end;
+        }
