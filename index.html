@@ -50,6 +50,109 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.all.min.js
 
         <!-- Auza Syamil Nabawi ganteng-->
 
+        <h1 id="message">Message Us</h1>
+        <div class="border-third">
+            <div class="form">
+                <form id="form" name="form" action="" method="get" onsubmit="ValidateForm()">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input type="text" id="input-name" name="input-name" placeholder="Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Birthdate</td>
+                            <td>:</td>
+                            <td><input type="date" id="input-birth" name="input-birth"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" name="gender" id="input-gender" value="Male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="input-gender" value="Female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pesan">Message</td>
+                            <td class="pesan">:</td>
+                            <td>
+                                <textarea name="message-input" id="input-pesan" rows="5" cols="43"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align: center;">
+                                <button type="submit" id="submitbtn" class="submitbtn" onclick="ValidateForm()"
+                                    style="width: 100%;">Kirim</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="table">
+                <div class="border-result">
+                    <div class="result">
+                        <table>
+                            <tr>
+                                <td id="bold">Current Time</td>
+                                <td id="bold">:</td>
+                                <td id="time-input"></td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Name</td>
+                                <td id="bold">:</td>
+                                <td id="name-input"></td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Birthdate</td>
+                                <td id="bold">:</td>
+                                <td id="birth-input"></td>
+                                <td><span id="age"></span></td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Gender</td>
+                                <td id="bold">:</td>
+                                <td id="gender-input"></td>
+                            </tr>
+                            <tr>
+                                <td id="bold">Message</td>
+                                <td id="bold">:</td>
+                                <td id="message-input"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="errorpopup" id="errorpopup">
+            <h2>Error !</h2>
+            <p>The data must be filled in !</p>
+            <button type="button" class="close-button">Ok</button>
+        </div>
+        <div class="successpopup" id="sucesspopup">
+            <h2>Thank You !</h2>
+            <p>Your data has been succesfully submitted !</p>
+            <button type="button" id="close-button-suc" class="close-button">Ok</button>
+        </div>
+        <div class="birthpopup" id="birthpopup">
+            <h2>Error !</h2>
+            <p>You can't input birth date more than now !</p>
+            <button type="button" id="close-button-suc" class="close-button">Ok</button>
+        </div>
+        <div class="logoutpopup" id="logoutpopup">
+            <h2>Thank You !</h2>
+            <p>See You Later <span id="namelogout"></span> !</p>
+            <button type="button" id="close-button-suc" class="close-button">Ok</button>
+        </div>
+    </main>
+    <br><br>
+    <hr>
+    <footer>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
         
 </body>
 </html>
