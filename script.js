@@ -81,5 +81,75 @@ function LogOut() {
             document.getElementById("time-input").innerHTML = "";
         }
     });
-
 }
+
+function success() {
+    Swal.fire({
+        title: "Success !",
+        text: "Your data has been successfully submitted !",
+        icon: "success"
+    });
+}
+
+function unsuccess() {
+    Swal.fire({
+        title: "Error",
+        text: "All data must be fill in",
+        icon: "error"
+    });
+}
+
+function anomaly() {
+    Swal.fire({
+        title: "Oops",
+        text: "You can't input your birth more than now !",
+        icon: "question"
+    });
+}
+
+// untuk men set popup berhasil atau tidak //
+function showpopup(ShowPopUp) {
+    ShowPopUp.classList.add("open-popup");
+
+    // mengatur pergerakan dari form ke popup menjadi smooth //
+    ShowPopUp.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    let closebtn = ShowPopUp.querySelector(".close-button");
+
+    closebtn.addEventListener("click", function () {
+        ShowPopUp.classList.remove("open-popup");
+    }, { once: true });
+}
+
+// for image slideshow //
+let indexSlide = 1;
+showDivs(indexSlide);
+
+// settings for image slideshow //
+function plusDivs(n) {
+    showDivs((indexSlide += n));
+}
+
+function showDivs(n) {
+    let i;
+    let imglist = document.getElementsByClassName("img");
+    if (n > imglist.length) {
+        indexSlide = 1;
+    } else if (n < 1) {
+        indexSlide = imglist.length;
+    }
+
+    for (let i = 0; i < imglist.length; i++) {
+        imglist[i].classList.remove("active");
+    }
+
+    imglist[indexSlide - 1].classList.add("active");
+}
+
+// Setting the duration of autoslide //
+setInterval(() => {
+    plusDivs(1);
+}, 2000);
+
+
+AOS.init();
